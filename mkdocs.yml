@@ -1,0 +1,10 @@
+site_name: MyPractice
+nav:
+    - Career: codingtest.md
+    - Coding: 
+        - 'example': 'example.md'
+    - Home: index.md
+theme: 
+    name: readthedocs
+extra_css:
+    - extra.css
