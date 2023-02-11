@@ -1,0 +1,9 @@
+site_name: MyPractice
+nav:
+    - Project1: index.md
+    - Project2: csknowledge.md
+    - Project3: englishpaper.md
+theme: 
+    name: readthedocs
+extra_css:
+#    - extra.css
