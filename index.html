@@ -1,9 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>newpage</title>
-</head>
-<body>
-    <p>system</p>
-</body>
-</html>
+    <style>
+      #output {
+        width: 100%;
+        height: 100px;
+        overflow-y: auto;
+        border: 1px solid #111;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="divCoins"></div>
+    <br />
+    <div>
+      <label>total money saved in the drink vending machine</label>
+      <input
+        type="text"
+        name=""
+        id="total_vending_amount"
+        value="1000"
+        readonly
+      /><br />
+      <label>inserted money</label><input type="text" name ""
+      id="total_input_amount" value="0" readonly/><br />
+      <label>my wallet</label>
+      <input
+        type="text"
+        name=""
+        id="total_customer_amount"
+        value="10000"
+        readonly
+      />
+    </div>
+    <br />
+    <div id="divDrinks"></div>
+    <br />
+    <div id="output"></div>
+    <script>
+      let total_vending_amount = 1000;
+      let total_customer_amount = 10000;
+      let total_input_amount = 0;
+
+      const = drinks = [
+        {
+          drinkId : "1",
+          drinkName: "coke",
+          price:700,
+          stock: 5,
+        }
+      ]
+    </script>
+  </body>
