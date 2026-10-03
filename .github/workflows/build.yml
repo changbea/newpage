@@ -35,17 +35,18 @@ jobs:
         run: |
           npm install
           npm install react-native-qrcode-svg@6.3.2 react-native-svg@14.1.0
+
       - name: Make gradlew executable
         working-directory: URLToQRCode
         run: chmod +x android/gradlew
 
-      - name: Build debug APK
+      - name: Build release APK
         working-directory: URLToQRCode
         run: |
           cd android
-          ./gradlew assembleDebug
+          ./gradlew assembleRelease
 
       - uses: actions/upload-artifact@v4
         with:
-          name: app-debug-apk
-          path: URLToQRCode/android/app/build/outputs/apk/debug/app-debug.apk
+          name: app-release-apk
+          path: URLToQRCode/android/app/build/outputs/apk/release/app-release.apk
