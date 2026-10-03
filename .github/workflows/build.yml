@@ -34,8 +34,7 @@ jobs:
         working-directory: URLToQRCode
         run: |
           npm install
-          npm install react-native-qrcode-svg react-native-svg
-
+          npm install react-native-qrcode-svg@6.3.2 react-native-svg@14.1.0
       - name: Make gradlew executable
         working-directory: URLToQRCode
         run: chmod +x android/gradlew
