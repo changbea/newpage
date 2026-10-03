@@ -1,4 +1,6 @@
-name: Build APK
+xrm -rf .github/workflows/build.yml
+
+ name: Build APK
 
 on:
   workflow_dispatch:
@@ -26,7 +28,9 @@ jobs:
         run: npx --yes react-native@0.73.6 init URLToQRCode --version 0.73.6 --skip-install
 
       - name: Copy in App code
-        run: cp source/App.js URLToQRCode/App.js
+        run: |
+          rm -f URLToQRCode/App.tsx
+          cp source/App.tsx URLToQRCode/App.tsx
 
       - name: Install dependencies (base + QR code libs)
         working-directory: URLToQRCode
