@@ -27,7 +27,7 @@ export default function App() {
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         style={styles.flex}
       >
-        <Text style={styles.title}>URL → QR Code</Text>
+        <Text style={styles.title}>URL to QR Code</Text>
 
         <TextInput
           style={styles.input}
